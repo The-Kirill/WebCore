@@ -1,20 +1,78 @@
 /** CSS STYLE **/
-:root {
-  --white: #fff;
-  --translucent-white: #d7ccc0;
-  --light: #f5f4f0;
-  --main: #fe8a02;
-  --main-dark: #42413c;
-  --dark: #2a2626;
-  --translucent-dark: #908d8b;
-  --brown: #b09a81;
-  --blue: #1085c5;
+@font-face {
+  font-weight: normal;
+  font-family: "TT Lakes Regular";
+  font-style: normal;
+  src: local("TT Lakes Regular");
+  src: url("fonts/TTLakes-Regular.eot");
+  src:
+    url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "TT Lakes Bold";
+  font-style: normal;
+  src: local("TT Lakes Bold");
+  src: url("fonts/TTLakes-Bold.eot");
+  src:
+    url("fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Bold.woff") format("woff"),
+    url("fonts/TTLakes-Bold.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
 }
 
 html,
 body {
-  color: var(--dark);
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6em;
+  height: 100%;
+
+  color: #1b1c21;
+  font-size: 14px;
+  font-family: "TT Lakes", sans-serif;
+  line-height: 1.5em;
+
+  background-color: #f8f8f8;
+
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 28px;
+}
+
+/* Header */
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
 }
